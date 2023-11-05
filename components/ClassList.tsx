@@ -1,8 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useSession } from "next-auth/react";
-import db from "@/utils/db";
 import axios from "axios";
 import ClassCard from "./ClassCard";
 import { ClassDetails } from "@prisma/client";
@@ -25,8 +23,12 @@ export default function ClassList({ user }: ClassListProps) {
 
   return (
     <div className="flex gap-6">
-      {classes.map((classDetail) => (
-        <ClassCard {...classDetail} href={`/classes/${classDetail.id}`} />
+      {classes.map((classDetail, index) => (
+        <ClassCard
+          {...classDetail}
+          href={`/classes/${classDetail.id}`}
+          key={index}
+        />
       ))}
     </div>
   );
