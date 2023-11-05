@@ -1,3 +1,21 @@
+# Syllab-US
+
+An amazing syllabus summarizer using gpt3.5 turbo.
+
+## Running the local server
+
+To host the dev server, ensure your local database is running and change .env accordingly
+
+Then, run the following:
+```bash
+pip install -r scripts/requirements.txt
+npm ci
+npx prisma migrate dev
+npm run dev
+```
+
+## Below is an ASCII character art for Hanson the handsome hardware hippo! 🦛
+
 ```
 ####################################SSSSSS%%?********?%SSSSSS#######################################
 #################################SSSSS%*+;::,,,,,,,,,,::;+*%SSSS####################################
