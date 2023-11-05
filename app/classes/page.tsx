@@ -22,6 +22,8 @@ export default function Classes() {
         </div>
       </div>
       <div className="px-12 py-8">
+        <h2 className="text-4xl">Hi {session.user.name}, </h2>
+        <h3 className="text-3xl pb-3">Here are your courses:</h3>
         <ClassList user={session?.user} />
       </div>
     </main>

@@ -19,11 +19,13 @@ export default function ClassDetail({ params }: { params: { id: string } }) {
     <main className="min-h-screen bg-dashboard">
       <Header headerColor="dashboard" />
       {classDetail && (
-        <div className="px-12 py-8">
-          <h1 className="text-2xl">{classDetail.name}</h1>
-          <h1 className="text-xl">{classDetail.description}</h1>
-          <br />
-          <p className="whitespace-pre-wrap">{classDetail.content}</p>
+        <div className="px-12 py-8 ">
+          <div className="bg-white px-3 py-3">
+            <h1 className="text-2xl">{classDetail.name}</h1>
+            <h1 className="text-xl">{classDetail.description}</h1>
+            <br />
+            <p className="whitespace-pre-wrap">{classDetail.content}</p>
+          </div>
         </div>
       )}
     </main>

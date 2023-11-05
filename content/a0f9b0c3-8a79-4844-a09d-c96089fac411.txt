@@ -1,0 +1,41 @@
+<Professor Information>:
+- Full Name: Prof. Wojciech Golab
+- Office Hours Schedule: TBD, Wednesdays at 1:10pm in DC-2528
+- Email and/or Telephone Contact: wgolab@uwaterloo.ca
+- Academic Department: ECE (Electrical and Computer Engineering)
+
+<Assignments Overview>:
+- Title of Assignment: Assignment 1: processes
+  - Nature of Assignment: Programming
+  - Scheduled Due Date: May 19
+  - Brief Description: Implement and debug concurrent C programs using processes.
+  - Required Submission Format: Not specified.
+  - Criteria for Evaluation: Graded on a 0-1-2 basis, with 0 for not attempted or doesn't work, 1 for some issues, and 2 for everything working as expected.
+
+- Title of Assignment: Assignment 2: network communication
+  - Nature of Assignment: Programming
+  - Scheduled Due Date: May 31
+  - Brief Description: Implement and debug concurrent C programs using network communication.
+  - Required Submission Format: Not specified.
+  - Criteria for Evaluation: Graded on a 0-1-2 basis, with 0 for not attempted or doesn't work, 1 for some issues, and 2 for everything working as expected.
+
+- Title of Assignment: Assignment 3: threads
+  - Nature of Assignment: Programming
+  - Scheduled Due Date: June 9
+  - Brief Description: Implement and debug concurrent C programs using threads.
+  - Required Submission Format: Not specified.
+  - Criteria for Evaluation: Graded on a 0-1-2 basis, with 0 for not attempted or doesn't work, 1 for some issues, and 2 for everything working as expected.
+
+- Title of Assignment: Assignment 4: synchronization
+  - Nature of Assignment: Programming
+  - Scheduled Due Date: Not specified.
+  - Brief Description: Implement and debug concurrent C programs using synchronization techniques.
+  - Required Submission Format: Not specified.
+  - Criteria for Evaluation: Graded on a 0-1-2 basis, with 0 for not attempted or doesn't work, 1 for some issues, and 2 for everything working as expected.
+
+- Title of Assignment: Assignment 5: asynchronous I/O with select/poll
+  - Nature of Assignment: Programming
+  - Scheduled Due Date: August 1
+  - Brief Description: Implement and debug concurrent C programs using asynchronous I/O with select/poll.
+  - Required Submission Format: Not specified.
+  - Criteria for Evaluation: Graded on a 0-1-2 basis, with 0 for not attempted or doesn't work, 1 for some issues, and 2 for everything working as expected.

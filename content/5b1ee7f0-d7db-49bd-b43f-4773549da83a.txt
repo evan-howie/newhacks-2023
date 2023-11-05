@@ -1,0 +1,41 @@
+<Professor Information>:
+- Full Name: Matthew Roman
+- Office Hours Schedule: Matthew Roman (L0101): By appointment; Matthew Hinton (L0201 & L0301): By appointment
+- Email and/or Telephone Contact: Matthew Roman: matthew.roman@rotman.utoronto.ca; Matthew Hinton: matthew.hinton@utoronto.ca
+- Academic Department: Not specified.
+
+<Assignments Overview>:
+- Title of Assignment: Participation/Attendance
+  - Nature of Assignment: Participation
+  - Scheduled Due Date: Ongoing
+  - Brief Description: Students are expected to actively participate in discussions and complete assigned readings and problems/cases each week.
+  - Required Submission Format: Not specified
+  - Criteria for Evaluation: Effective participation, including being a good listener, making relevant points, showing evidence of preparation, sharing knowledge and ideas, and clarifying important aspects.
+
+- Title of Assignment: Connect Homework
+  - Nature of Assignment: Homework
+  - Scheduled Due Date: Ongoing
+  - Brief Description: There are 10 homework assignments in total, similar to end-of-textbook materials. Students have a maximum of three attempts, and only the highest attempt counts. The full solution is available after the final attempt.
+  - Required Submission Format: Not specified
+  - Criteria for Evaluation: Not specified
+
+- Title of Assignment: Connect Quizzes
+  - Nature of Assignment: Online quizzes
+  - Scheduled Due Date: September 27, November 1, November 15, December 6
+  - Brief Description: There are a total of four Connect quizzes to be completed on CONNECT. Students only have one attempt per quiz.
+  - Required Submission Format: Not specified
+  - Criteria for Evaluation: Graded within CONNECT, with access to grades available one hour after the deadline for each assignment.
+
+- Title of Assignment: Term Test
+  - Nature of Assignment: Test
+  - Scheduled Due Date: October 18
+  - Brief Description: The term test will cover material covered prior to the midterm.
+  - Required Submission Format: Not specified
+  - Criteria for Evaluation: Not specified
+
+- Title of Assignment: Final Assessment
+  - Nature of Assignment: Assessment
+  - Scheduled Due Date: TBA
+  - Brief Description: The final assessment will cover material covered during the entire term.
+  - Required Submission Format: Not specified
+  - Criteria for Evaluation: Not specified
