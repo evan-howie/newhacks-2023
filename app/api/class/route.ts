@@ -43,14 +43,20 @@ export const POST = async (req: NextRequest) => {
   const filePath = "./syllabus/" + uuidv4() + path.extname(file.name);
   await fs.writeFile(filePath, Buffer.from(await file.arrayBuffer()));
 
+  if (
+    !(await fs
+      .access("./content")
+      .then(() => true)
+      .catch(() => false))
+  )
+    await fs.mkdir("./content");
+
+  const outputPath = "./content/" + uuidv4() + ".txt";
   const child = subprocess.spawn("python3", [
     "./scripts/parse.py",
-    //  filePath
+    filePath,
+    outputPath,
   ]);
-  let content = "";
-  child.stdout.on("data", (data) => {
-    content += data.toString();
-  });
 
   child.stderr.pipe(process.stderr);
 
@@ -62,7 +68,7 @@ export const POST = async (req: NextRequest) => {
   const created = await db.classDetails.create({
     data: {
       name,
-      content,
+      content: outputPath,
       user: {
         connect: {
           email: session.user.email,
@@ -74,4 +80,24 @@ export const POST = async (req: NextRequest) => {
   });
 
   return NextResponse.json({ id: created.id }, { status: 201 });
+};
+
+export const GET = async (req: NextRequest) => {
+  const session = await getServerSession(authOptions);
+
+  if (!session?.user)
+    return NextResponse.json({ error: "bad session" }, { status: 400 });
+
+  const classes = await db.classDetails.findMany({
+    where: {
+      user: {
+        email: session.user.email,
+      },
+    },
+  });
+
+  if (classes === null)
+    return NextResponse.json({ error: "oops" }, { status: 400 });
+
+  return NextResponse.json(classes);
 };

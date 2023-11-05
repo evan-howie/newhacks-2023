@@ -3,6 +3,7 @@
 import React, { FormEvent, useState } from "react";
 import Header from "@/components/Header";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 type FormType = {
   className: string;
@@ -11,11 +12,13 @@ type FormType = {
 };
 
 export default function AddClass() {
+  const router = useRouter();
   const [data, setData] = useState<FormType>({
     className: "",
     classDescription: "",
     syllabusFile: null,
   });
+  const [working, setWorking] = useState<boolean>(false);
 
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -26,7 +29,17 @@ export default function AddClass() {
     formData.set("desc", data.classDescription);
     formData.set("file", data.syllabusFile);
 
-    await axios.post("/api/class", formData);
+    setWorking(true);
+    await axios
+      .post("/api/class", formData)
+      .then(() => {
+        setWorking(false);
+        router.push("/classes");
+      })
+      .catch((e) => {
+        setWorking(false);
+        console.error(e);
+      });
   };
 
   return (
@@ -96,8 +109,9 @@ export default function AddClass() {
           <button
             type="submit"
             className="mt-3 px-3 py-2 bg-add rounded-full text-white"
+            disabled={working}
           >
-            Add Class
+            {working ? "Working..." : "Add Class"}
           </button>
         </form>
       </div>
